@@ -2,3 +2,5 @@ fastapi==0.87.0
 uvicorn[standard]==0.20.0
 PyMySQL==1.0.2
 pydantic==1.10.2
+python-dotenv==0.21.0
+bcrypt==4.0.1
