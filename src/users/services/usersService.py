@@ -11,6 +11,7 @@ def getUsers():
         cursor.execute(sql, ('A',))
         result = cursor.fetchall()
         print(result)
+        connection.commit()
         return result
 
 def getUserByUserName(username):
@@ -19,6 +20,7 @@ def getUserByUserName(username):
         cursor.execute(sql, ("%" + username + "%", 'A',))
         result = cursor.fetchall()
         print(result)
+        connection.commit()
         return result
 
 def create_user(user, response: Response):
